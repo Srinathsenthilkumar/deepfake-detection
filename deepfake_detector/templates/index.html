@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detector | Multimodal AI</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.1">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Background visual effects -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <i class="ph ph-shield-check"></i>
+                <h1>Deepfake Detector</h1>
+            </div>
+            <p>Multimodal AI analysis for biological inconsistencies and synthetic AV tracking.</p>
+        </header>
+
+        <div class="main-card glassmorphism">
+
+            <!-- Input Selector Tabs -->
+            <div class="tab-container">
+                <button class="tab-btn active" onclick="switchTab('upload')">
+                    <i class="ph ph-upload-simple"></i> Upload File
+                </button>
+                <button class="tab-btn" onclick="switchTab('url')">
+                    <i class="ph ph-link"></i> Paste Link
+                </button>
+            </div>
+
+            <!-- Upload File Section -->
+            <div id="upload-section" class="input-section active">
+                <div class="upload-area" id="drop-zone" onclick="document.getElementById('file-input').click()">
+                    <i class="ph ph-cloud-arrow-up cloud-icon"></i>
+                    <h3>Drag & drop your video/audio here</h3>
+                    <p>or click to browse (.mp4, .wav, .mp3)</p>
+                    <input type="file" id="file-input" style="display: none;" accept=".mp4,.wav,.mp3">
+                </div>
+                <div id="file-preview" class="file-preview hidden">
+                    <i class="ph ph-file-video"></i>
+                    <span id="file-name">filename.mp4</span>
+                    <i class="ph ph-x clear-btn" onclick="clearFile()"></i>
+                </div>
+            </div>
+
+            <!-- Paste Link Section -->
+            <div id="url-section" class="input-section hidden">
+                <div class="url-input-container">
+                    <i class="ph ph-link input-icon"></i>
+                    <input type="text" id="url-input" placeholder="Paste YouTube, Twitter, or direct media link...">
+                </div>
+                <p class="helper-text">Our engine will attempt to download the highest quality media suitable for
+                    analysis.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="analyze-btn" class="primary-btn" onclick="submitAnalysis()">
+                <i class="ph ph-sparkle"></i> Analyze Media
+            </button>
+
+            <!-- Loading State -->
+            <div id="loading-state" class="loading-state hidden">
+                <div class="spinner"></div>
+                <h4>Processing Media...</h4>
+                <p class="loading-subtext">Extracting multimodal tensors and running inference</p>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="results-section hidden">
+                <h2 class="results-title">Analysis Complete</h2>
+
+                <div class="verdict-banner" id="verdict-banner">
+                    <i class="ph ph-warning-circle" id="verdict-icon"></i>
+                    <div class="verdict-text">
+                        <h3 id="verdict-title">Highly Suspicious</h3>
+                        <p id="overall-score">Overall Fake Probability: <span>85.0%</span></p>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <i class="ph ph-face-mask"></i>
+                        <h4>Video Anomalies</h4>
+                        <div class="score-ring">
+                            <span id="video-score">--</span>
+                        </div>
+                        <p class="metric-desc">Checks for biological inconsistencies like blinking.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <i class="ph ph-waveform"></i>
+                        <h4>Audio Artifacts</h4>
+                        <div class="score-ring">
+                            <span id="audio-score">--</span>
+                        </div>
+                        <p class="metric-desc">Detects spectral holes from TTS generators.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <i class="ph ph-arrows-merge"></i>
+                        <h4>Lip-Sync Match</h4>
+                        <div class="score-ring">
+                            <span id="sync-score">--</span>
+                        </div>
+                        <p class="metric-desc">Evaluates cross-modal timing.</p>
+                    </div>
+                </div>
+
+                <button class="outline-btn" onclick="resetForm()">Analyze Another</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='app.js') }}?v=1.1"></script>
+</body>
+
+</html>
