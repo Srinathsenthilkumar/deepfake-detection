@@ -1,8 +1,0 @@
-2026-02-27 15:11:51.408712: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2026-02-27 15:11:52.186789: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-Traceback (most recent call last):
-  File "C:\Users\saude\.gemini\antigravity\scratch\deepfake_detector\app.py", line 18, in <module>
-    vp = VideoProcessor()
-  File "C:\Users\saude\.gemini\antigravity\scratch\deepfake_detector\video_processing.py", line 9, in __init__
-    self.mp_face_mesh = mp.solutions.face_mesh
-AttributeError: module 'mediapipe' has no attribute 'solutions'

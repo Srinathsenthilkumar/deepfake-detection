@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: deepfake-detector
+    ports:
+      - "8500:8500"
+    environment:
+      - PORT=8500
+      - FLASK_DEBUG=False
+    restart: unless-stopped

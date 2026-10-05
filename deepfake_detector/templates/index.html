@@ -4,132 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepfake Detector | Multimodal AI</title>
-    <!-- Modern Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1.1">
-    <!-- Phosphor Icons -->
+    <meta name="description" content="Next-Gen Multimodal Deepfake Detection System using MediaPipe Facial Biometrics, Librosa Acoustic Spectrograms, and Cross-Modal AV-Synchronization.">
+    <meta property="og:title" content="Deepfake Detector | Multimodal AI Forensic Platform">
+    <meta property="og:description" content="Detect digital face-swaps, synthetic speech, and lip-sync anomalies with multimodal neural forensics.">
+    <title>Deepfake Detector | Multimodal AI Forensics</title>
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Phosphor Modern Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom Modern CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=2.0">
 </head>
 
 <body>
 
-    <!-- Background visual effects -->
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+    <!-- Ambient Glowing Gradients -->
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+    <div class="glow-orb orb-tertiary"></div>
+    <div class="cyber-grid"></div>
 
-    <div class="container">
+    <main class="app-layout">
 
-        <header>
-            <div class="logo">
-                <i class="ph ph-shield-check"></i>
-                <h1>Deepfake Detector</h1>
+        <!-- Top Navigation / Brand Header -->
+        <header class="app-header">
+            <div class="brand-row">
+                <div class="brand-badge">
+                    <span class="pulse-indicator"></span>
+                    <span class="badge-text">NEURAL ENGINE ACTIVE</span>
+                </div>
+                <div class="version-tag">
+                    <i class="ph ph-cpu"></i> v2.4 Multimodal
+                </div>
             </div>
-            <p>Multimodal AI analysis for biological inconsistencies and synthetic AV tracking.</p>
+
+            <div class="title-group">
+                <div class="icon-hero">
+                    <i class="ph ph-shield-checkered"></i>
+                </div>
+                <h1>Deepfake <span class="gradient-text">Detector</span></h1>
+            </div>
+            <p class="hero-subtitle">
+                Autonomous forensic verification analyzing 468-point facial mesh dynamics, acoustic spectral harmonics, and cross-modal phoneme synchronization.
+            </p>
         </header>
 
-        <div class="main-card glassmorphism">
+        <!-- Central Inspection Card -->
+        <section class="card glass-card">
 
-            <!-- Input Selector Tabs -->
-            <div class="tab-container">
-                <button class="tab-btn active" onclick="switchTab('upload')">
-                    <i class="ph ph-upload-simple"></i> Upload File
+            <!-- Mode Selector Tabs -->
+            <nav class="mode-tabs" aria-label="Input Mode Selector">
+                <button type="button" class="tab-item active" id="tab-upload" onclick="switchMode('upload')">
+                    <i class="ph ph-upload-simple"></i>
+                    <span>Upload Media</span>
                 </button>
-                <button class="tab-btn" onclick="switchTab('url')">
-                    <i class="ph ph-link"></i> Paste Link
+                <button type="button" class="tab-item" id="tab-url" onclick="switchMode('url')">
+                    <i class="ph ph-link-simple"></i>
+                    <span>URL Analysis</span>
+                </button>
+                <button type="button" class="tab-item" id="tab-demo" onclick="switchMode('demo')">
+                    <i class="ph ph-sparkle"></i>
+                    <span>Instant Demos</span>
+                </button>
+            </nav>
+
+            <!-- 1. Upload File Mode -->
+            <div id="section-upload" class="mode-view active">
+                <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+                    <div class="drop-icon-wrapper">
+                        <i class="ph ph-cloud-arrow-up"></i>
+                    </div>
+                    <h3>Drop video or audio file here</h3>
+                    <p class="drop-hint">Supports MP4, WebM, MOV, MKV, WAV, MP3 (Up to 60MB)</p>
+                    <button type="button" class="browse-pill">Browse Local Files</button>
+                    <input type="file" id="file-input" style="display: none;" accept="video/*,audio/*,.mp4,.mov,.webm,.mkv,.wav,.mp3">
+                </div>
+
+                <!-- Media Preview Card -->
+                <div id="media-preview" class="media-preview hidden">
+                    <div class="preview-header">
+                        <div class="file-info">
+                            <i class="ph ph-file-video file-type-icon" id="file-icon"></i>
+                            <div>
+                                <h4 id="file-name">filename.mp4</h4>
+                                <span class="file-size" id="file-size">0.0 MB</span>
+                            </div>
+                        </div>
+                        <button type="button" class="remove-btn" onclick="clearSelectedFile()" title="Remove file">
+                            <i class="ph ph-x"></i>
+                        </button>
+                    </div>
+                    <!-- Live HTML5 Preview Player -->
+                    <div class="preview-player-container" id="player-container">
+                        <video id="video-preview" controls class="media-player hidden"></video>
+                        <audio id="audio-preview" controls class="media-player audio-only hidden"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Web URL Mode -->
+            <div id="section-url" class="mode-view hidden">
+                <div class="url-input-card">
+                    <label for="url-input" class="input-label">Media Stream URL</label>
+                    <div class="input-box-wrapper">
+                        <i class="ph ph-link-simple"></i>
+                        <input type="url" id="url-input" placeholder="https://www.youtube.com/watch?v=... or direct MP4 link">
+                    </div>
+                    <p class="field-hint">
+                        <i class="ph ph-info"></i> Compatible with YouTube, Vimeo, Twitter/X video, and public video links.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. Demo Samples Mode -->
+            <div id="section-demo" class="mode-view hidden">
+                <div class="demo-samples-grid">
+                    <div class="demo-card" onclick="runDemoSample('synthetic')">
+                        <div class="demo-badge danger-badge">AI Deepfake</div>
+                        <h4>Face-Swap + Voice Clone</h4>
+                        <p>Simulates a synthetic speaker with rigid eye blink intervals and vocoder frequency truncation.</p>
+                        <button type="button" class="demo-trigger-btn">
+                            <i class="ph ph-play-circle"></i> Test Deepfake Model
+                        </button>
+                    </div>
+
+                    <div class="demo-card" onclick="runDemoSample('authentic')">
+                        <div class="demo-badge success-badge">Authentic Human</div>
+                        <h4>Natural Broadcast Interview</h4>
+                        <p>Simulates organic facial micro-expressions, natural blink rate, and harmonic speech resonance.</p>
+                        <button type="button" class="demo-trigger-btn">
+                            <i class="ph ph-play-circle"></i> Test Authentic Media
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="action-footer" id="action-footer">
+                <button type="button" id="analyze-btn" class="btn-primary" onclick="initiateAnalysis()">
+                    <i class="ph ph-scan"></i>
+                    <span>Execute Forensic Analysis</span>
                 </button>
             </div>
 
-            <!-- Upload File Section -->
-            <div id="upload-section" class="input-section active">
-                <div class="upload-area" id="drop-zone" onclick="document.getElementById('file-input').click()">
-                    <i class="ph ph-cloud-arrow-up cloud-icon"></i>
-                    <h3>Drag & drop your video/audio here</h3>
-                    <p>or click to browse (.mp4, .wav, .mp3)</p>
-                    <input type="file" id="file-input" style="display: none;" accept=".mp4,.wav,.mp3">
-                </div>
-                <div id="file-preview" class="file-preview hidden">
-                    <i class="ph ph-file-video"></i>
-                    <span id="file-name">filename.mp4</span>
-                    <i class="ph ph-x clear-btn" onclick="clearFile()"></i>
-                </div>
-            </div>
-
-            <!-- Paste Link Section -->
-            <div id="url-section" class="input-section hidden">
-                <div class="url-input-container">
-                    <i class="ph ph-link input-icon"></i>
-                    <input type="text" id="url-input" placeholder="Paste YouTube, Twitter, or direct media link...">
-                </div>
-                <p class="helper-text">Our engine will attempt to download the highest quality media suitable for
-                    analysis.</p>
-            </div>
-
-            <!-- Submit Button -->
-            <button id="analyze-btn" class="primary-btn" onclick="submitAnalysis()">
-                <i class="ph ph-sparkle"></i> Analyze Media
-            </button>
-
-            <!-- Loading State -->
+            <!-- Loading & Scanning Progress Screen -->
             <div id="loading-state" class="loading-state hidden">
-                <div class="spinner"></div>
-                <h4>Processing Media...</h4>
-                <p class="loading-subtext">Extracting multimodal tensors and running inference</p>
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
+                <div class="radar-scan-box">
+                    <div class="scanner-sweep"></div>
+                    <i class="ph ph-fingerprint scanner-icon"></i>
+                </div>
+                <h3 id="scan-status-title">Extracting Multimodal Streams...</h3>
+                <p class="scan-subtext" id="scan-status-subtext">Sampling frames and generating acoustic Mel-tensors</p>
+
+                <!-- Forensic Step Badges -->
+                <div class="scan-steps">
+                    <div class="step-badge active" id="step-1">
+                        <i class="ph ph-check"></i> 1. Ingestion
+                    </div>
+                    <div class="step-badge" id="step-2">
+                        <i class="ph ph-circle"></i> 2. Facial Mesh
+                    </div>
+                    <div class="step-badge" id="step-3">
+                        <i class="ph ph-circle"></i> 3. Acoustic FFT
+                    </div>
+                    <div class="step-badge" id="step-4">
+                        <i class="ph ph-circle"></i> 4. AV-Sync
+                    </div>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
                 </div>
             </div>
 
-            <!-- Results Section -->
-            <div id="results-section" class="results-section hidden">
-                <h2 class="results-title">Analysis Complete</h2>
+            <!-- Forensic Results Dashboard -->
+            <div id="results-section" class="results-dashboard hidden">
 
+                <div class="results-top-bar">
+                    <span class="report-badge"><i class="ph ph-file-text"></i> FORENSIC VERDICT REPORT</span>
+                    <button type="button" class="export-btn" onclick="exportReportJSON()" title="Download JSON verification">
+                        <i class="ph ph-download-simple"></i> Export Report
+                    </button>
+                </div>
+
+                <!-- Primary Verdict Banner -->
                 <div class="verdict-banner" id="verdict-banner">
-                    <i class="ph ph-warning-circle" id="verdict-icon"></i>
-                    <div class="verdict-text">
-                        <h3 id="verdict-title">Highly Suspicious</h3>
-                        <p id="overall-score">Overall Fake Probability: <span>85.0%</span></p>
+                    <div class="verdict-icon-box" id="verdict-icon-box">
+                        <i class="ph ph-shield-check" id="verdict-icon"></i>
+                    </div>
+                    <div class="verdict-content">
+                        <span class="verdict-sub">CONFIDENCE VERDICT</span>
+                        <h2 id="verdict-title">Likely Authentic Media</h2>
+                        <p class="verdict-explanation" id="verdict-explanation">
+                            Natural biological blinking frequency and harmonic acoustic distribution detected.
+                        </p>
+                    </div>
+                    <div class="gauge-wrapper">
+                        <div class="probability-display">
+                            <span class="prob-number" id="final-prob-value">12.5%</span>
+                            <span class="prob-label">FAKE PROBABILITY</span>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Detailed Metric Breakdown Cards -->
                 <div class="metrics-grid">
-                    <div class="metric-card">
-                        <i class="ph ph-face-mask"></i>
-                        <h4>Video Anomalies</h4>
-                        <div class="score-ring">
-                            <span id="video-score">--</span>
+
+                    <!-- Visual Metric -->
+                    <div class="metric-card" id="metric-video">
+                        <div class="metric-header">
+                            <div class="metric-icon"><i class="ph ph-eye"></i></div>
+                            <span class="metric-tag" id="video-tag">Visual</span>
                         </div>
-                        <p class="metric-desc">Checks for biological inconsistencies like blinking.</p>
+                        <h4>Facial Dynamics</h4>
+                        <div class="score-row">
+                            <span class="metric-score" id="video-score">15.0%</span>
+                            <span class="metric-status" id="video-status">Natural</span>
+                        </div>
+                        <div class="bar-meter">
+                            <div class="bar-fill" id="video-bar" style="width: 15%;"></div>
+                        </div>
+                        <p class="metric-description">
+                            Evaluates Eye Aspect Ratio (EAR) involuntary blinking and 468 landmark micro-expressions.
+                        </p>
                     </div>
 
-                    <div class="metric-card">
-                        <i class="ph ph-waveform"></i>
-                        <h4>Audio Artifacts</h4>
-                        <div class="score-ring">
-                            <span id="audio-score">--</span>
+                    <!-- Acoustic Metric -->
+                    <div class="metric-card" id="metric-audio">
+                        <div class="metric-header">
+                            <div class="metric-icon"><i class="ph ph-waveform"></i></div>
+                            <span class="metric-tag" id="audio-tag">Acoustic</span>
                         </div>
-                        <p class="metric-desc">Detects spectral holes from TTS generators.</p>
+                        <h4>Voice Spectrum</h4>
+                        <div class="score-row">
+                            <span class="metric-score" id="audio-score">10.0%</span>
+                            <span class="metric-status" id="audio-status">Natural</span>
+                        </div>
+                        <div class="bar-meter">
+                            <div class="bar-fill" id="audio-bar" style="width: 10%;"></div>
+                        </div>
+                        <p class="metric-description">
+                            Scans Mel-frequency bands for vocoder artifacts, synthetic silence holes, and cutoff cliffs.
+                        </p>
                     </div>
 
-                    <div class="metric-card">
-                        <i class="ph ph-arrows-merge"></i>
-                        <h4>Lip-Sync Match</h4>
-                        <div class="score-ring">
-                            <span id="sync-score">--</span>
+                    <!-- Cross-Modal Metric -->
+                    <div class="metric-card" id="metric-sync">
+                        <div class="metric-header">
+                            <div class="metric-icon"><i class="ph ph-arrows-split"></i></div>
+                            <span class="metric-tag" id="sync-tag">Cross-Modal</span>
                         </div>
-                        <p class="metric-desc">Evaluates cross-modal timing.</p>
+                        <h4>AV-Synchronization</h4>
+                        <div class="score-row">
+                            <span class="metric-score" id="sync-score">18.0%</span>
+                            <span class="metric-status" id="sync-status">Aligned</span>
+                        </div>
+                        <div class="bar-meter">
+                            <div class="bar-fill" id="sync-bar" style="width: 18%;"></div>
+                        </div>
+                        <p class="metric-description">
+                            Measures temporal kinematic correlation between lip aperture changes and vocal audio energy.
+                        </p>
                     </div>
+
                 </div>
 
-                <button class="outline-btn" onclick="resetForm()">Analyze Another</button>
+                <!-- Reset / New Analysis Button -->
+                <button type="button" class="btn-outline" onclick="resetApp()">
+                    <i class="ph ph-arrow-counter-clockwise"></i> Inspect Another Media
+                </button>
             </div>
 
-        </div>
-    </div>
+        </section>
 
-    <!-- Custom JS -->
-    <script src="{{ url_for('static', filename='app.js') }}?v=1.1"></script>
+        <!-- Technical Specification Footer -->
+        <footer class="app-footer">
+            <div class="tech-stack-row">
+                <span><i class="ph ph-code"></i> Python 3</span>
+                <span><i class="ph ph-circuitry"></i> MediaPipe Vision</span>
+                <span><i class="ph ph-music-notes"></i> Librosa FFT</span>
+                <span><i class="ph ph-flask"></i> Flask & Gunicorn</span>
+            </div>
+            <p>© 2026 Deepfake Forensic AI Platform. Open-source research tool.</p>
+        </footer>
+
+    </main>
+
+    <!-- App JavaScript -->
+    <script src="{{ url_for('static', filename='app.js') }}?v=2.0"></script>
 </body>
 
 </html>

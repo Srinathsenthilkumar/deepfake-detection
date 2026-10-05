@@ -1,358 +1,0 @@
-2026-02-27 15:43:27.493943: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2026-02-27 15:43:28.167998: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-W0000 00:00:1772187210.667825   25524 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772187210.674595   25576 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772187210.682435   24684 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Serving Flask app 'app'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:8500
-Press CTRL+C to quit
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772187214.129817    3780 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772187214.135355   23728 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772187214.143065   13788 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 15:45:10] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 15:45:11] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 15:45:11] "GET /static/app.js HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 15:45:11] "GET /favicon.ico HTTP/1.1" 404 -
-127.0.0.1 - - [27/Feb/2026 15:45:23] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 15:50:26] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-ERROR: unable to download video data: HTTP Error 403: Forbidden
-127.0.0.1 - - [27/Feb/2026 15:57:34] "POST /analyze HTTP/1.1" 400 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-ERROR: unable to download video data: HTTP Error 403: Forbidden
-127.0.0.1 - - [27/Feb/2026 15:58:06] "POST /analyze HTTP/1.1" 400 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
-Error downloading: ERROR: unable to download video data: HTTP Error 403: Forbidden
-Error downloading: ERROR: unable to download video data: HTTP Error 403: Forbidden
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772188266.694546    5968 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772188266.699701   16444 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772188266.707401   16444 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\app.py', reloading
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772188394.042792   11080 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772188394.050004    6372 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772188394.062672    6372 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 16:03:22] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:03:23] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:03:23] "GET /static/app.js HTTP/1.1" 304 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-ERROR: unable to download video data: HTTP Error 403: Forbidden
-127.0.0.1 - - [27/Feb/2026 16:03:48] "POST /analyze HTTP/1.1" 400 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
-Error downloading: ERROR: unable to download video data: HTTP Error 403: Forbidden
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772188560.236061   18056 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772188560.241576   16708 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772188560.249889   16708 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 16:09:54] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:09:55] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:09:55] "GET /static/app.js HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:12:06] "GET / HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://www.youtube.com/watch?v=jNQXAC9IVRw
-[youtube] jNQXAC9IVRw: Downloading webpage
-[youtube] jNQXAC9IVRw: Downloading tv client config
-[youtube] jNQXAC9IVRw: Downloading tv player API JSON
-[youtube] jNQXAC9IVRw: Downloading web safari player API JSON
-[info] jNQXAC9IVRw: Downloading 1 format(s): 18
-[download] Sleeping 5.00 seconds as required by the site...
-ERROR: unable to download video data: HTTP Error 403: Forbidden
-127.0.0.1 - - [27/Feb/2026 16:15:16] "POST /analyze HTTP/1.1" 400 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
-Error downloading: ERROR: unable to download video data: HTTP Error 403: Forbidden
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772189181.844595   24700 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772189181.851887   25140 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772189181.860290   25140 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\app.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\app.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\app.py', reloading
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772189211.001609   22888 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772189211.008012    7572 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772189211.017118    7572 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 16:18:31] "POST /analyze HTTP/1.1" 200 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\multimodal_fusion.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\audio_processing.py', reloading
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772189329.568250    5468 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772189329.573988    5728 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772189329.583566    5728 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772189418.664266   15552 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772189418.670484   11884 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772189418.680505    6700 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 16:21:18] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:21:19] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:21:19] "GET /static/app.js HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:24:48] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:24:48] "GET /static/style.css HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:24:49] "GET /static/app.js HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:24:51] "GET /favicon.ico HTTP/1.1" 404 -
-127.0.0.1 - - [27/Feb/2026 16:26:06] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:26:06] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:26:06] "GET /static/app.js HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:27:13] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:27:13] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:27:14] "GET /static/app.js HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:27:27] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 16:27:27] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 16:27:27] "GET /static/app.js HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 23:20:56] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:20:56] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 23:20:56] "GET /static/app.js HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:21:08] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:21:08] "GET /static/style.css HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 23:21:08] "GET /static/app.js HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:24:00] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:24:00] "GET /static/style.css?v=1.1 HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:24:00] "GET /static/app.js?v=1.1 HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:26:04] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:26:04] "GET /static/style.css?v=1.1 HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 23:26:05] "GET /static/app.js?v=1.1 HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/lLs0e0xczhU?si=-3zcORH7ypAmaRdH
-[youtube] lLs0e0xczhU: Downloading webpage
-[youtube] lLs0e0xczhU: Downloading android player API JSON
-[info] lLs0e0xczhU: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\lLs0e0xczhU.mp4
-[download]   0.0% of    2.27MiB at  Unknown B/s ETA Unknown[download]   0.1% of    2.27MiB at  329.71KiB/s ETA 00:07  [download]   0.3% of    2.27MiB at  769.31KiB/s ETA 00:03[download]   0.6% of    2.27MiB at    1.61MiB/s ETA 00:01[download]   1.3% of    2.27MiB at  410.80KiB/s ETA 00:05[download]   2.7% of    2.27MiB at  458.72KiB/s ETA 00:04[download]   5.5% of    2.27MiB at  608.03KiB/s ETA 00:03[download]  10.9% of    2.27MiB at  843.16KiB/s ETA 00:02[download]  21.9% of    2.27MiB at    1.28MiB/s ETA 00:01[download]  43.9% of    2.27MiB at    1.93MiB/s ETA 00:00[download]  87.9% of    2.27MiB at    2.82MiB/s ETA 00:00[download] 100.0% of    2.27MiB at    2.98MiB/s ETA 00:00[download] 100% of    2.27MiB in 00:00:01 at 1.19MiB/s   
-127.0.0.1 - - [27/Feb/2026 23:26:54] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/tuWKsJqbcWs?si=YblcJ89ypi48Ux7a
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] tuWKsJqbcWs: Downloading webpage
-[youtube] tuWKsJqbcWs: Downloading android player API JSON
-[info] tuWKsJqbcWs: Downloading 1 format(s): 18
-[download] Sleeping 5.00 seconds as required by the site...
-[download] Destination: temp_downloads\tuWKsJqbcWs.mp4
-[download]   0.1% of  883.45KiB at   17.67KiB/s ETA 00:49[download]   0.3% of  883.45KiB at   51.61KiB/s ETA 00:17[download]   0.8% of  883.45KiB at  120.43KiB/s ETA 00:07[download]   1.7% of  883.45KiB at  250.48KiB/s ETA 00:03[download]   3.5% of  883.45KiB at  195.81KiB/s ETA 00:04[download]   7.1% of  883.45KiB at  122.87KiB/s ETA 00:06[download]  14.4% of  883.45KiB at  190.01KiB/s ETA 00:03[download]  28.9% of  883.45KiB at  287.16KiB/s ETA 00:02[download]  57.8% of  883.45KiB at  499.14KiB/s ETA 00:00[download] 100.0% of  883.45KiB at  756.11KiB/s ETA 00:00[download] 100% of  883.45KiB in 00:00:01 at 467.23KiB/s 
-127.0.0.1 - - [27/Feb/2026 23:28:23] "POST /analyze HTTP/1.1" 200 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\video_processing.py', reloading
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772215328.588501   23200 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772215328.607556   30864 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772215328.637898   30864 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [27/Feb/2026 23:40:55] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:42:39] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:42:40] "GET /static/app.js?v=1.1 HTTP/1.1" 304 -
-127.0.0.1 - - [27/Feb/2026 23:42:40] "GET /static/style.css?v=1.1 HTTP/1.1" 304 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/lLs0e0xczhU?si=-3zcORH7ypAmaRdH
-[youtube] lLs0e0xczhU: Downloading webpage
-[youtube] lLs0e0xczhU: Downloading android player API JSON
-[info] lLs0e0xczhU: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\lLs0e0xczhU.mp4
-[download]   0.0% of    2.27MiB at  164.39KiB/s ETA 00:14[download]   0.1% of    2.27MiB at  434.13KiB/s ETA 00:05[download]   0.3% of    2.27MiB at  876.34KiB/s ETA 00:02[download]   0.6% of    2.27MiB at    1.83MiB/s ETA 00:01[download]   1.3% of    2.27MiB at  314.61KiB/s ETA 00:07[download]   2.7% of    2.27MiB at  639.37KiB/s ETA 00:03[download]   5.5% of    2.27MiB at  831.25KiB/s ETA 00:02[download]  10.9% of    2.27MiB at    1.06MiB/s ETA 00:01[download]  21.9% of    2.27MiB at    1.57MiB/s ETA 00:01[download]  43.9% of    2.27MiB at    1.74MiB/s ETA 00:00[download]  87.9% of    2.27MiB at    2.70MiB/s ETA 00:00[download] 100.0% of    2.27MiB at    2.96MiB/s ETA 00:00[download] 100% of    2.27MiB in 00:00:01 at 1.42MiB/s   
-127.0.0.1 - - [27/Feb/2026 23:43:25] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/tuWKsJqbcWs?si=D2xHvd_sWyIXrilu
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] tuWKsJqbcWs: Downloading webpage
-[youtube] tuWKsJqbcWs: Downloading android player API JSON
-[info] tuWKsJqbcWs: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\tuWKsJqbcWs.mp4
-[download]   0.1% of  883.45KiB at  414.05KiB/s ETA 00:05[download]   0.3% of  883.45KiB at  477.95KiB/s ETA 00:01[download]   0.8% of  883.45KiB at  843.49KiB/s ETA 00:01[download]   1.7% of  883.45KiB at    1.49MiB/s ETA 00:00[download]   3.5% of  883.45KiB at    2.28MiB/s ETA 00:00[download]   7.1% of  883.45KiB at    1.77MiB/s ETA 00:00[download]  14.4% of  883.45KiB at    1.60MiB/s ETA 00:00[download]  28.9% of  883.45KiB at    1.70MiB/s ETA 00:00[download]  57.8% of  883.45KiB at    2.30MiB/s ETA 00:00[download] 100.0% of  883.45KiB at    3.02MiB/s ETA 00:00[download] 100% of  883.45KiB in 00:00:00 at 994.39KiB/s 
-127.0.0.1 - - [27/Feb/2026 23:44:45] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:45:50] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:46:51] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [27/Feb/2026 23:48:43] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/lLs0e0xczhU?si=-3zcORH7ypAmaRdH
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] lLs0e0xczhU: Downloading webpage
-[youtube] lLs0e0xczhU: Downloading android player API JSON
-[info] lLs0e0xczhU: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\lLs0e0xczhU.mp4
-[download]   0.0% of    2.27MiB at  267.94KiB/s ETA 00:08[download]   0.1% of    2.27MiB at  545.54KiB/s ETA 00:04[download]   0.3% of    2.27MiB at  767.89KiB/s ETA 00:03[download]   0.6% of    2.27MiB at    1.61MiB/s ETA 00:01[download]   1.3% of    2.27MiB at    2.68MiB/s ETA 00:00[download]   2.7% of    2.27MiB at  651.24KiB/s ETA 00:03[download]   5.5% of    2.27MiB at  855.09KiB/s ETA 00:02[download]  10.9% of    2.27MiB at  928.71KiB/s ETA 00:02[download]  21.9% of    2.27MiB at    1.41MiB/s ETA 00:01[download]  43.9% of    2.27MiB at    2.14MiB/s ETA 00:00[download]  87.9% of    2.27MiB at    3.22MiB/s ETA 00:00[download] 100.0% of    2.27MiB at    3.43MiB/s ETA 00:00[download] 100% of    2.27MiB in 00:00:01 at 1.67MiB/s   
-127.0.0.1 - - [27/Feb/2026 23:50:20] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/nhnQ8IOf5es?si=q5KvyPD70rd-uwUC
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] nhnQ8IOf5es: Downloading webpage
-[youtube] nhnQ8IOf5es: Downloading android player API JSON
-[info] nhnQ8IOf5es: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\nhnQ8IOf5es.mp4
-[download]   0.0% of    3.68MiB at  Unknown B/s ETA Unknown[download]   0.1% of    3.68MiB at  437.74KiB/s ETA 00:08  [download]   0.2% of    3.68MiB at 1021.40KiB/s ETA 00:03[download]   0.4% of    3.68MiB at    1.51MiB/s ETA 00:02[download]   0.8% of    3.68MiB at  517.08KiB/s ETA 00:07[download]   1.7% of    3.68MiB at  525.19KiB/s ETA 00:07[download]   3.4% of    3.68MiB at  818.38KiB/s ETA 00:04[download]   6.8% of    3.68MiB at    1.18MiB/s ETA 00:02[download]  13.5% of    3.68MiB at    1.91MiB/s ETA 00:01[download]  27.1% of    3.68MiB at    3.19MiB/s ETA 00:00[download]  54.3% of    3.68MiB at    5.17MiB/s ETA 00:00[download] 100.0% of    3.68MiB at    8.02MiB/s ETA 00:00[download] 100% of    3.68MiB in 00:00:01 at 3.33MiB/s   
-127.0.0.1 - - [28/Feb/2026 07:44:47] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 09:26:50] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/tuWKsJqbcWs?si=D2xHvd_sWyIXrilu
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] tuWKsJqbcWs: Downloading webpage
-[youtube] tuWKsJqbcWs: Downloading android player API JSON
-[info] tuWKsJqbcWs: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\tuWKsJqbcWs.mp4
-[download]   0.1% of  883.45KiB at   58.47KiB/s ETA 00:15[download]   0.3% of  883.45KiB at  170.34KiB/s ETA 00:05[download]   0.8% of  883.45KiB at  397.45KiB/s ETA 00:02[download]   1.7% of  883.45KiB at  764.31KiB/s ETA 00:01[download]   3.5% of  883.45KiB at    1.54MiB/s ETA 00:00[download]   7.1% of  883.45KiB at    1.01MiB/s ETA 00:00[download]  14.4% of  883.45KiB at    1.06MiB/s ETA 00:00[download]  28.9% of  883.45KiB at    1.36MiB/s ETA 00:00[download]  57.8% of  883.45KiB at    1.15MiB/s ETA 00:00[download] 100.0% of  883.45KiB at    1.18MiB/s ETA 00:00[download] 100% of  883.45KiB in 00:00:01 at 820.99KiB/s 
-127.0.0.1 - - [28/Feb/2026 09:27:18] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:25:14] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/HivaKPAj5tw?si=HwPAa5-r647qpQyk
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] HivaKPAj5tw: Downloading webpage
-[youtube] HivaKPAj5tw: Downloading android player API JSON
-[info] HivaKPAj5tw: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\HivaKPAj5tw.mp4
-[download]   0.0% of    3.63MiB at    9.77KiB/s ETA 06:20[download]   0.1% of    3.63MiB at   20.69KiB/s ETA 02:59[download]   0.2% of    3.63MiB at   47.62KiB/s ETA 01:17[download]   0.4% of    3.63MiB at   70.78KiB/s ETA 00:52[download]   0.8% of    3.63MiB at   80.28KiB/s ETA 00:45[download]   1.7% of    3.63MiB at  108.06KiB/s ETA 00:33[download]   3.4% of    3.63MiB at  100.43KiB/s ETA 00:35[download]   5.9% of    3.63MiB at  110.08KiB/s ETA 00:31[download]   9.3% of    3.63MiB at   90.24KiB/s ETA 00:37[download]  11.2% of    3.63MiB at   93.51KiB/s ETA 00:35[download]  14.3% of    3.63MiB at   94.70KiB/s ETA 00:33[download]  16.9% of    3.63MiB at  101.32KiB/s ETA 00:30[download]  21.3% of    3.63MiB at  108.54KiB/s ETA 00:26[download]  25.3% of    3.63MiB at  111.61KiB/s ETA 00:24[download]  28.9% of    3.63MiB at  108.18KiB/s ETA 00:24[download]  31.2% of    3.63MiB at  107.82KiB/s ETA 00:23[download]  34.0% of    3.63MiB at  109.59KiB/s ETA 00:22[download]  37.6% of    3.63MiB at  111.73KiB/s ETA 00:20[download]  41.3% of    3.63MiB at  114.22KiB/s ETA 00:19[download]  45.3% of    3.63MiB at  114.74KiB/s ETA 00:17[download]  48.5% of    3.63MiB at  117.00KiB/s ETA 00:16[download]  52.9% of    3.63MiB at  114.86KiB/s ETA 00:15[download]  55.5% of    3.63MiB at  114.74KiB/s ETA 00:14[download]  58.5% of    3.63MiB at  112.19KiB/s ETA 00:13[download]  60.6% of    3.63MiB at  111.56KiB/s ETA 00:13[download]  63.2% of    3.63MiB at  108.16KiB/s ETA 00:12[download]  64.9% of    3.63MiB at  106.73KiB/s ETA 00:12[download]  66.8% of    3.63MiB at  107.56KiB/s ETA 00:11[download]  70.7% of    3.63MiB at  108.90KiB/s ETA 00:10[download]  74.4% of    3.63MiB at  110.34KiB/s ETA 00:08[download]  78.4% of    3.63MiB at  112.02KiB/s ETA 00:07[download]  82.6% of    3.63MiB at  110.77KiB/s ETA 00:05[download]  85.1% of    3.63MiB at  108.33KiB/s ETA 00:05[download]  86.8% of    3.63MiB at  108.24KiB/s ETA 00:04[download]  89.6% of    3.63MiB at  107.11KiB/s ETA 00:03[download]  91.7% of    3.63MiB at  103.81KiB/s ETA 00:02[download]  93.0% of    3.63MiB at  102.25KiB/s ETA 00:02[download]  94.3% of    3.63MiB at  100.51KiB/s ETA 00:02[download]  95.5% of    3.63MiB at   95.63KiB/s ETA 00:01[download]  96.1% of    3.63MiB at   94.60KiB/s ETA 00:01[download]  97.0% of    3.63MiB at   91.74KiB/s ETA 00:01[download]  97.6% of    3.63MiB at   91.92KiB/s ETA 00:00[download]  98.9% of    3.63MiB at   91.69KiB/s ETA 00:00[download] 100.0% of    3.63MiB at   91.90KiB/s ETA 00:00[download] 100% of    3.63MiB in 00:00:42 at 88.10KiB/s  
-127.0.0.1 - - [28/Feb/2026 10:32:49] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:36:51] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:40:57] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:53:30] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:54:45] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:59:19] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 10:59:19] "GET /static/style.css?v=1.1 HTTP/1.1" 304 -
-127.0.0.1 - - [28/Feb/2026 10:59:19] "GET /static/app.js?v=1.1 HTTP/1.1" 304 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\app.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\video_processing.py', reloading
- * Detected change in 'C:\\Users\\saude\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\threading.py', reloading
- * Detected change in 'C:\\Users\\saude\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\werkzeug\\serving.py', reloading
- * Detected change in 'C:\\Users\\saude\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\socketserver.py', reloading
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-Error deleting temp_downloads\videoplayback_1.mp4: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_downloads\\videoplayback_1.mp4'
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772257123.922991   31836 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772257123.935331    4076 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772257123.946385    4076 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [28/Feb/2026 11:13:44] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 11:14:54] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/e4zz4E-6MSE?si=1Vztn6q5Z6DIrZJA
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] e4zz4E-6MSE: Downloading webpage
-[youtube] e4zz4E-6MSE: Downloading android player API JSON
-[info] e4zz4E-6MSE: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\e4zz4E-6MSE.mp4
-[download]   0.0% of    8.14MiB at   16.93KiB/s ETA 08:12[download]   0.0% of    8.14MiB at   49.84KiB/s ETA 02:47[download]   0.1% of    8.14MiB at  114.39KiB/s ETA 01:12[download]   0.2% of    8.14MiB at  241.71KiB/s ETA 00:34[download]   0.4% of    8.14MiB at   96.36KiB/s ETA 01:26[download]   0.8% of    8.14MiB at  156.23KiB/s ETA 00:52[download]   1.5% of    8.14MiB at  173.11KiB/s ETA 00:47[download]   3.1% of    8.14MiB at  185.92KiB/s ETA 00:43[download]   5.5% of    8.14MiB at  186.41KiB/s ETA 00:42[download]   7.7% of    8.14MiB at  208.64KiB/s ETA 00:36[download]  11.2% of    8.14MiB at  237.52KiB/s ETA 00:31[download]  15.3% of    8.14MiB at  195.48KiB/s ETA 00:36[download]  17.4% of    8.14MiB at  195.93KiB/s ETA 00:35[download]  19.8% of    8.14MiB at  193.60KiB/s ETA 00:34[download]  21.9% of    8.14MiB at  196.16KiB/s ETA 00:33[download]  24.6% of    8.14MiB at  202.65KiB/s ETA 00:31[download]  27.9% of    8.14MiB at  210.84KiB/s ETA 00:28[download]  31.5% of    8.14MiB at  211.58KiB/s ETA 00:26[download]  34.1% of    8.14MiB at  199.74KiB/s ETA 00:27[download]  35.5% of    8.14MiB at  201.31KiB/s ETA 00:26[download]  38.4% of    8.14MiB at  208.01KiB/s ETA 00:24[download]  42.7% of    8.14MiB at  217.53KiB/s ETA 00:21[download]  47.1% of    8.14MiB at  219.58KiB/s ETA 00:20[download]  50.0% of    8.14MiB at  219.61KiB/s ETA 00:18[download]  52.6% of    8.14MiB at  219.48KiB/s ETA 00:17[download]  55.3% of    8.14MiB at  220.21KiB/s ETA 00:16[download]  58.1% of    8.14MiB at  222.69KiB/s ETA 00:15[download]  61.5% of    8.14MiB at  219.29KiB/s ETA 00:14[download]  63.6% of    8.14MiB at  221.29KiB/s ETA 00:13[download]  67.2% of    8.14MiB at  223.63KiB/s ETA 00:12[download]  70.5% of    8.14MiB at  225.25KiB/s ETA 00:10[download]  73.7% of    8.14MiB at  224.64KiB/s ETA 00:09[download]  76.2% of    8.14MiB at  226.33KiB/s ETA 00:08[download]  79.7% of    8.14MiB at  227.03KiB/s ETA 00:07[download]  82.6% of    8.14MiB at  228.42KiB/s ETA 00:06[download]  85.9% of    8.14MiB at  231.02KiB/s ETA 00:05[download]  89.8% of    8.14MiB at  231.62KiB/s ETA 00:03[download]  92.7% of    8.14MiB at  231.82KiB/s ETA 00:02[download]  95.6% of    8.14MiB at  232.82KiB/s ETA 00:01[download]  98.8% of    8.14MiB at  230.18KiB/s ETA 00:00[download] 100.0% of    8.14MiB at  230.38KiB/s ETA 00:00[download] 100% of    8.14MiB in 00:00:38 at 214.79KiB/s 
-127.0.0.1 - - [28/Feb/2026 11:19:26] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 11:19:30] "GET /static/app.js?v=1.1 HTTP/1.1" 304 -
-127.0.0.1 - - [28/Feb/2026 11:19:30] "GET /static/style.css?v=1.1 HTTP/1.1" 304 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/tuWKsJqbcWs?si=D2xHvd_sWyIXrilu
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] tuWKsJqbcWs: Downloading webpage
-[youtube] tuWKsJqbcWs: Downloading android player API JSON
-[info] tuWKsJqbcWs: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\tuWKsJqbcWs.mp4
-[download]   0.1% of  883.45KiB at  991.09KiB/s ETA 00:01[download]   0.3% of  883.45KiB at    1.55MiB/s ETA 00:00[download]   0.8% of  883.45KiB at    3.63MiB/s ETA 00:00[download]   1.7% of  883.45KiB at    4.44MiB/s ETA 00:00[download]   3.5% of  883.45KiB at    5.28MiB/s ETA 00:00[download]   7.1% of  883.45KiB at  556.17KiB/s ETA 00:01[download]  14.4% of  883.45KiB at  420.08KiB/s ETA 00:01[download]  28.9% of  883.45KiB at  266.58KiB/s ETA 00:02[download]  51.0% of  883.45KiB at  263.84KiB/s ETA 00:01[download]  80.5% of  883.45KiB at  212.62KiB/s ETA 00:00[download]  98.5% of  883.45KiB at  216.52KiB/s ETA 00:00[download] 100.0% of  883.45KiB at  219.38KiB/s ETA 00:00[download] 100% of  883.45KiB in 00:00:04 at 191.91KiB/s 
-127.0.0.1 - - [28/Feb/2026 11:20:10] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 11:20:11] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/7cXW6Neb61c?si=MdflqlJGsVgpLzlE
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-Error deleting temp_downloads\tuWKsJqbcWs.mp4: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_downloads\\tuWKsJqbcWs.mp4'
-[youtube] 7cXW6Neb61c: Downloading webpage
-[youtube] 7cXW6Neb61c: Downloading android player API JSON
-[info] 7cXW6Neb61c: Downloading 1 format(s): 18
-[download] Sleeping 5.00 seconds as required by the site...
-[download] Destination: temp_downloads\7cXW6Neb61c.mp4
-[download]   0.1% of    1.07MiB at    9.99KiB/s ETA 01:49[download]   0.3% of    1.07MiB at   29.97KiB/s ETA 00:36[download]   0.6% of    1.07MiB at   69.23KiB/s ETA 00:15[download]   1.4% of    1.07MiB at  148.34KiB/s ETA 00:07[download]   2.8% of    1.07MiB at  131.08KiB/s ETA 00:08[download]   5.8% of    1.07MiB at  155.92KiB/s ETA 00:06[download]  11.6% of    1.07MiB at  183.09KiB/s ETA 00:05[download]  23.4% of    1.07MiB at  226.09KiB/s ETA 00:03[download]  46.8% of    1.07MiB at  144.95KiB/s ETA 00:04[download]  58.6% of    1.07MiB at  142.29KiB/s ETA 00:03[download]  70.7% of    1.07MiB at  144.07KiB/s ETA 00:02[download]  84.8% of    1.07MiB at  132.47KiB/s ETA 00:01[download]  93.4% of    1.07MiB at  138.05KiB/s ETA 00:00[download] 100.0% of    1.07MiB at  143.32KiB/s ETA 00:00[download] 100% of    1.07MiB in 00:00:09 at 113.27KiB/s 
-127.0.0.1 - - [28/Feb/2026 11:22:00] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/aw4oUWdY5PE?si=yp7ywDfPQTg_VDgY
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] aw4oUWdY5PE: Downloading webpage
-[youtube] aw4oUWdY5PE: Downloading android player API JSON
-[info] aw4oUWdY5PE: Downloading 1 format(s): 18
-[download] Sleeping 5.00 seconds as required by the site...
-[download] Destination: temp_downloads\aw4oUWdY5PE.mp4
-[download]   0.1% of    1.94MiB at    6.19KiB/s ETA 05:19[download]   0.2% of    1.94MiB at   18.45KiB/s ETA 01:47[download]   0.4% of    1.94MiB at   42.79KiB/s ETA 00:46[download]   0.8% of    1.94MiB at   91.70KiB/s ETA 00:21[download]   1.6% of    1.94MiB at   59.85KiB/s ETA 00:32[download]   3.2% of    1.94MiB at   54.99KiB/s ETA 00:34[download]   5.8% of    1.94MiB at   72.75KiB/s ETA 00:25[download]  10.9% of    1.94MiB at   75.79KiB/s ETA 00:23[download]  14.9% of    1.94MiB at   70.17KiB/s ETA 00:24[download]  17.9% of    1.94MiB at   70.95KiB/s ETA 00:22[download]  21.6% of    1.94MiB at   72.65KiB/s ETA 00:21[download]  25.8% of    1.94MiB at   75.15KiB/s ETA 00:19[download]  30.4% of    1.94MiB at   76.88KiB/s ETA 00:17[download]  34.8% of    1.94MiB at   78.06KiB/s ETA 00:16[download]  39.2% of    1.94MiB at   82.36KiB/s ETA 00:14[download]  46.6% of    1.94MiB at   81.64KiB/s ETA 00:12[download]  50.6% of    1.94MiB at   81.97KiB/s ETA 00:11[download]  54.9% of    1.94MiB at   82.90KiB/s ETA 00:10[download]  59.7% of    1.94MiB at   87.24KiB/s ETA 00:09[download]  69.4% of    1.94MiB at   92.44KiB/s ETA 00:06[download]  76.8% of    1.94MiB at   92.65KiB/s ETA 00:04[download]  81.5% of    1.94MiB at   93.86KiB/s ETA 00:03[download]  87.5% of    1.94MiB at   97.13KiB/s ETA 00:02[download]  96.9% of    1.94MiB at  100.50KiB/s ETA 00:00[download] 100.0% of    1.94MiB at  101.10KiB/s ETA 00:00[download] 100% of    1.94MiB in 00:00:22 at 89.89KiB/s  
-127.0.0.1 - - [28/Feb/2026 11:23:44] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 12:11:54] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/BhgjTyWllRg?si=jT4FFUbsN-OFVQZj
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] BhgjTyWllRg: Downloading webpage
-[youtube] BhgjTyWllRg: Downloading android player API JSON
-[info] BhgjTyWllRg: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\BhgjTyWllRg.mp4
-[download]   0.2% of  612.43KiB at  195.08KiB/s ETA 00:03[download]   0.5% of  612.43KiB at  131.42KiB/s ETA 00:04[download]   1.1% of  612.43KiB at  254.46KiB/s ETA 00:02[download]   2.4% of  612.43KiB at  429.56KiB/s ETA 00:01[download]   5.1% of  612.43KiB at  770.99KiB/s ETA 00:00[download]  10.3% of  612.43KiB at  495.26KiB/s ETA 00:01[download]  20.7% of  612.43KiB at  436.28KiB/s ETA 00:01[download]  41.6% of  612.43KiB at  617.17KiB/s ETA 00:00[download]  83.4% of  612.43KiB at  713.47KiB/s ETA 00:00[download] 100.0% of  612.43KiB at  834.75KiB/s ETA 00:00[download] 100% of  612.43KiB in 00:00:01 at 426.12KiB/s 
-127.0.0.1 - - [28/Feb/2026 12:15:17] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 12:19:55] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 13:02:23] "POST /analyze HTTP/1.1" 200 -
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\audio_processing.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\multimodal_fusion.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\media_utils.py', reloading
- * Detected change in 'C:\\Users\\saude\\.gemini\\antigravity\\scratch\\deepfake_detector\\video_processing.py', reloading
- * Detected change in 'C:\\Users\\saude\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\threading.py', reloading
- * Detected change in 'C:\\Users\\saude\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\werkzeug\\serving.py', reloading
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-Error deleting temp_downloads\BhgjTyWllRg.mp4: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_downloads\\BhgjTyWllRg.mp4'
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-127.0.0.1 - - [28/Feb/2026 13:03:25] "POST /analyze HTTP/1.1" 500 -
-Exception in thread Thread-2:
-Traceback (most recent call last):
-  File "C:\Users\saude\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
-    self.run()
-  File "C:\Users\saude\AppData\Local\Programs\Python\Python39\lib\threading.py", line 910, in run
- * Restarting with watchdog (windowsapi)
-W0000 00:00:1772264065.103786   12640 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-W0000 00:00:1772264065.148424   22484 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
-W0000 00:00:1772264065.191013   28284 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
- * Debugger is active!
- * Debugger PIN: 132-083-553
-127.0.0.1 - - [28/Feb/2026 13:05:05] "POST /analyze HTTP/1.1" 200 -
-127.0.0.1 - - [28/Feb/2026 16:17:52] "POST /analyze HTTP/1.1" 200 -
-Deprecated Feature: Support for Python version 3.9 has been deprecated. Please update to Python 3.10 or above
-[youtube] Extracting URL: https://youtube.com/shorts/lLs0e0xczhU?si=-3zcORH7ypAmaRdH
-MoviePy Extract Error: got an unexpected keyword argument 'verbose'
-[youtube] lLs0e0xczhU: Downloading webpage
-[youtube] lLs0e0xczhU: Downloading android player API JSON
-[info] lLs0e0xczhU: Downloading 1 format(s): 18
-[download] Sleeping 6.00 seconds as required by the site...
-[download] Destination: temp_downloads\lLs0e0xczhU.mp4
-[download]   0.0% of    2.27MiB at  154.62KiB/s ETA 00:15[download]   0.1% of    2.27MiB at  429.55KiB/s ETA 00:05[download]   0.3% of    2.27MiB at 1002.29KiB/s ETA 00:02[download]   0.6% of    2.27MiB at    1.54MiB/s ETA 00:01[download]   1.3% of    2.27MiB at  700.01KiB/s ETA 00:03[download]   2.7% of    2.27MiB at  811.94KiB/s ETA 00:02[download]   5.5% of    2.27MiB at    1.01MiB/s ETA 00:02[download]  10.9% of    2.27MiB at    1.10MiB/s ETA 00:01[download]  21.9% of    2.27MiB at    1.28MiB/s ETA 00:01[download]  43.9% of    2.27MiB at    1.05MiB/s ETA 00:01[download]  83.1% of    2.27MiB at    1.28MiB/s ETA 00:00[download] 100.0% of    2.27MiB at    1.28MiB/s ETA 00:00[download] 100% of    2.27MiB in 00:00:02 at 832.48KiB/s 
-127.0.0.1 - - [28/Feb/2026 16:19:38] "POST /analyze HTTP/1.1" 200 -
